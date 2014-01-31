@@ -1,2 +1,5 @@
+requests
+bs4
 flask
 flask_bootstrap
+gunicorn
