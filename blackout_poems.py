@@ -53,5 +53,11 @@ def index():
     for x in range(7):
         random_items.append(random.choice([i for i, j in enumerate(text)]))
 
+    for i, j in enumerate(text):
+        if i in random_items:
+            pass
+        else:
+            text[i] = re.sub('.', 'x', j)
+
     return render_template('index.html', text=enumerate(text),
                            random_items=random_items)
